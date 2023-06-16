@@ -1,0 +1,86 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Georgia;
+    font-weight: bold
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #F5D1C3;
+  color: #333333;
+  border: 2px solid #B7A797; /* Changed border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Hover effect for box shadow */
+  transform: translateY(-3px); /* Hover effect for vertical translation */
+}
+
+.card .name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card .email {
+  font-size: 14px;
+  color: #777777;
+}
+
+/* Animation for card entry */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-entry {
+  animation: fadeIn 0.5s ease;
+}
+
+
+
+
+
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
